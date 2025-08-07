@@ -1,94 +1,86 @@
- ## 🧠 Foro Hub
+# 📚 Foro Hub - API REST para gestión de tópicos
 
-
-Una API REST construida con Spring Boot para la gestión de **tópicos de discusión**, al estilo de un foro técnico. Diseñada para CRUD completo, validaciones robustas, y preparada para integrarse con autenticación y autorización.
-
----
-
-### 🚀 Características implementadas
-
-- ? Registro de tópicos (POST)
-- ? Listado de tópicos (GET)
-- ? Detalle de un tópico por ID (GET /topicos/{id})
-- ? Actualización de tópicos (PUT /topicos/{id})
-- ? Eliminación de tópicos (DELETE /topicos/{id})
-- ? Validaciones con @Valid
-- ? Conexión a base de datos con Spring Data JPA
-- ? Entidades: Topico, Autor, Curso
-- ? Pruebas realizadas con Postman
+Foro Hub es una API RESTful construida con Spring Boot que permite gestionar tópicos de discusión. Implementa operaciones CRUD completas, validaciones, persistencia en base de datos y autenticación/autorización.
 
 ---
 
- ### 🛠️ Tecnologías utilizadas
-
+## 🚀 Tecnologías utilizadas
 
 - Java 21
-- Spring Boot
-- Maven
-- Spring Web
+- Spring Boot 3.x
 - Spring Data JPA
-- MySQL / H2 (según configuración)
-- Lombok
-- Postman (para pruebas manuales)
+- Spring Security
+- MySQL / H2
+- Maven
+- Postman
 - Git y GitHub
 
 ---
 
- ### 🗃️ Estructura del proyecto
->>
->> \`\`\`plaintext
->> src/
->>  └── main/
->>      ├── java/
->>      │   └── com.foro.foroHub/
->>      │       ├── controller/
->>      │       ├── dto/
->>      │       ├── model/
->>      │       └── repository/
->>      └── resources/
->>          └── application.properties
->> \`\`\`
+## 🧩 Funcionalidades
 
+- ✅ Crear nuevos tópicos
+- ✅ Listar todos los tópicos
+- ✅ Filtrar tópicos por curso y año
+- ✅ Obtener un tópico por ID
+- ✅ Actualizar un tópico existente
+- ✅ Eliminar un tópico
+- ✅ Autenticación con token JWT
+- ✅ Manejo de errores
+- ✅ Validaciones con Bean Validation
 
 ---
 
- ### 📦 Cómo ejecutar el proyecto localmente
+## 🗺️ Diagrama del flujo de la API
 
+Este diagrama muestra visualmente cómo se maneja el flujo de solicitudes dentro de la API:
+
+![Flujo de la API](src/main/img/diagrama-flujo.png)
+
+
+> Asegúrate de tener la imagen en la misma carpeta que el `README.md` para que se vea correctamente en GitHub.
+
+---
+
+## ▶️ ¿Cómo ejecutar el proyecto?
 
 1. Clona el repositorio:
 
-\\\ash
-git clone https://github.com/Kenmar30/foro-hub.git
-\\\
+   ```bash
+   git clone https://github.com/Kenmar30/foro-hub.git
+   cd foro-hub
+   
+2. Asegúrate de tener una base de datos configurada (H2 o MySQL).
 
-2. Abre el proyecto con tu IDE favorito (IntelliJ IDEA, Eclipse, VSCode)
+3. Configura tu archivo application.properties según tu entorno.
 
-3. Asegúrate de tener MySQL corriendo (o cambia a H2 si lo deseas)
+4. Ejecuta la aplicación:
 
-4. Configura tus credenciales en \pplication.properties\
 
-5. Ejecuta la clase \ForoHubApplication.java\
+./mvnw spring-boot:run
 
-6. Prueba los endpoints desde Postman:
-   - \GET /topicos\
-   - \POST /topicos\
-   - \PUT /topicos/{id}\
-   - \DELETE /topicos/{id}\
+5. Accede desde Postman o tu navegador:
+
+
+http://localhost:8080/topicos
+
+
+📫 Cómo contribuir
+- Haz un fork de este repositorio.
+
+- Crea una nueva rama: git checkout -b mi-feature
+
+- Realiza tus cambios y haz commits: git commit -m "Agrega nueva feature"
+
+- Haz push a tu rama: git push origin mi-feature
+
+- Abre un Pull Request.
+
+📝 Licencia
+Este proyecto está bajo la licencia MIT.
+Consulta el archivo LICENSE para más detalles.
+
 
 ---
 
- ### 📌 Estado del proyecto
 
-?? En desarrollo activo — se planea añadir:
-
-- ? Autenticación con JWT
-- ? Paginación y ordenamiento
-- ? Filtros por curso y año
-- ? Documentación con Swagger
-
----
-
- ### 📄 Licencia
-
-
-Este proyecto está bajo licencia [MIT](https://choosealicense.com/licenses/mit/)
