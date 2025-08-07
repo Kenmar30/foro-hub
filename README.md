@@ -1,55 +1,59 @@
-## ?? Foro Hub
+ ## 🧠 Foro Hub
 
-Una API REST construida con Spring Boot para la gesti�n de **t�picos de discusi�n**, al estilo de un foro t�cnico. Dise�ada para CRUD completo, validaciones robustas, y preparada para integrarse con autenticaci�n y autorizaci�n.
+
+Una API REST construida con Spring Boot para la gestión de **tópicos de discusión**, al estilo de un foro técnico. Diseñada para CRUD completo, validaciones robustas, y preparada para integrarse con autenticación y autorización.
 
 ---
 
-### ?? Caracter�sticas implementadas
+### 🚀 Características implementadas
 
-- ? Registro de t�picos (POST)
-- ? Listado de t�picos (GET)
-- ? Detalle de un t�pico por ID (GET /topicos/{id})
-- ? Actualizaci�n de t�picos (PUT /topicos/{id})
-- ? Eliminaci�n de t�picos (DELETE /topicos/{id})
+- ? Registro de tópicos (POST)
+- ? Listado de tópicos (GET)
+- ? Detalle de un tópico por ID (GET /topicos/{id})
+- ? Actualización de tópicos (PUT /topicos/{id})
+- ? Eliminación de tópicos (DELETE /topicos/{id})
 - ? Validaciones con @Valid
-- ? Conexi�n a base de datos con Spring Data JPA
+- ? Conexión a base de datos con Spring Data JPA
 - ? Entidades: Topico, Autor, Curso
 - ? Pruebas realizadas con Postman
 
 ---
 
-### ??? Tecnolog�as utilizadas
+ ### 🛠️ Tecnologías utilizadas
 
-- Java 17
+
+- Java 21
 - Spring Boot
 - Maven
 - Spring Web
 - Spring Data JPA
-- MySQL / H2 (seg�n configuraci�n)
+- MySQL / H2 (según configuración)
 - Lombok
 - Postman (para pruebas manuales)
 - Git y GitHub
 
 ---
 
-### ??? Estructura del proyecto
+ ### 🗃️ Estructura del proyecto
+>>
+>> \`\`\`plaintext
+>> src/
+>>  └── main/
+>>      ├── java/
+>>      │   └── com.foro.foroHub/
+>>      │       ├── controller/
+>>      │       ├── dto/
+>>      │       ├── model/
+>>      │       └── repository/
+>>      └── resources/
+>>          └── application.properties
+>> \`\`\`
 
-\\\plaintext
-src/
- +-- main/
-     +-- java/
-     �   +-- com.foro.foroHub/
-     �       +-- controller/
-     �       +-- dto/
-     �       +-- model/
-     �       +-- repository/
-     +-- resources/
-         +-- application.properties
-\\\
 
 ---
 
-### ?? C�mo ejecutar el proyecto localmente
+ ### 📦 Cómo ejecutar el proyecto localmente
+
 
 1. Clona el repositorio:
 
@@ -59,7 +63,7 @@ git clone https://github.com/Kenmar30/foro-hub.git
 
 2. Abre el proyecto con tu IDE favorito (IntelliJ IDEA, Eclipse, VSCode)
 
-3. Aseg�rate de tener MySQL corriendo (o cambia a H2 si lo deseas)
+3. Asegúrate de tener MySQL corriendo (o cambia a H2 si lo deseas)
 
 4. Configura tus credenciales en \pplication.properties\
 
@@ -73,17 +77,18 @@ git clone https://github.com/Kenmar30/foro-hub.git
 
 ---
 
-### ?? Estado del proyecto
+ ### 📌 Estado del proyecto
 
-?? En desarrollo activo � se planea a�adir:
+?? En desarrollo activo — se planea añadir:
 
-- ? Autenticaci�n con JWT
-- ? Paginaci�n y ordenamiento
-- ? Filtros por curso y a�o
-- ? Documentaci�n con Swagger
+- ? Autenticación con JWT
+- ? Paginación y ordenamiento
+- ? Filtros por curso y año
+- ? Documentación con Swagger
 
 ---
 
-### ?? Licencia
+ ### 📄 Licencia
 
-Este proyecto est� bajo licencia [MIT](https://choosealicense.com/licenses/mit/)
+
+Este proyecto está bajo licencia [MIT](https://choosealicense.com/licenses/mit/)
