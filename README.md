@@ -38,7 +38,6 @@ Este diagrama muestra visualmente cómo se maneja el flujo de solicitudes dentro
 ![Flujo de la API](src/main/img/diagrama-flujo.png)
 
 
-> Asegúrate de tener la imagen en la misma carpeta que el `README.md` para que se vea correctamente en GitHub.
 
 ---
 
