@@ -35,7 +35,8 @@ Foro Hub es una API RESTful construida con Spring Boot que permite gestionar tó
 
 Este diagrama muestra visualmente cómo se maneja el flujo de solicitudes dentro de la API:
 
-![Flujo de la API](src/main/img/diagrama-flujo.png)
+![Diagrama de flujo](src/main/img/diagrama-flujo.png)
+
 
 
 
